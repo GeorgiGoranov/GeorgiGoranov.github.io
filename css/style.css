@@ -435,30 +435,35 @@ p {
   color: var(--first-color);
 }
 
-.exp__item {
+.exp__item,
+.text__info p {
   color: var(--title-color);
 }
 
-.text__info p{
-  color: var(--title-color);
-}
 
 .name__date {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: var(--container-color);
   border: 2px solid var(--first-color);
   max-width: 1120px;
   margin-inline: 1.5rem;
   list-style-type: none;
+  
 }
 
-.name__date li{
-  padding: 1rem;
-}
+
 
 /*projects*/
 
 .projects {
   background-color: var(--container-color);
+}
+
+.section__title{
+  display: flex;
+  justify-content: center;
 }
 
 .projects__container {
@@ -776,7 +781,6 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%) scale(0);
-  border: 1px solid var(--first-color);
   border-radius: 10px;
   z-index: 10;
   background-color: white;
@@ -791,19 +795,20 @@ p {
 }
 
 .modal-header{
-  padding: 10px 15px;
+  padding: 5px 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid var(--first-color);
+  
 }
 
-.modal-header .title{
+.title{
 font-size: 1.25rem;
 font-weight: bold;
 }
 
-.modal-header .close-button{
+.close-button{
   cursor: pointer;
   border: none;
   outline: none;
@@ -812,14 +817,13 @@ font-weight: bold;
   font-weight: bold;
 }
 
-.modal-body{
-  padding: 10px 15px;
-}
 
 .header__modal__body{
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
   padding-bottom: 1.25rem;
+  text-align: center;
 
 }
 
@@ -836,18 +840,42 @@ button{
    color: black;
 }
 
-.p__header_modal{
-  color: black
+.modal-body{
+  padding: 10px 15px;
+  background-color: var(--first-color);
+  border-radius: 0  0 10px 10px;
 }
 
-.p__header_modal span{
+.p__header_modal {
+  color: var(--title-color)
+}
+
+#av-1{
+  font-size: x-large;
+  color: white
+  
+}
+
+#dev-1{
+  font-size: x-large;
+  color: white
+}
+
+#av-2{
+  font-size: x-large;
+  color: red
+  
+}
+
+#dev-2{
+  font-size: x-large;
   color: red
 }
 
 
 .p__modal{
   text-align: center;
-  color: var(--first-color);
+  color: black
 }
 
 #overlay{

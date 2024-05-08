@@ -36,7 +36,7 @@ ScrollReveal().reveal('.home_data, .home__social, .footer__container');
 ScrollReveal().reveal('.home__image', {origin: 'bottom'});
 ScrollReveal().reveal('.education__data, .skills__container', {origin: 'left'});
 ScrollReveal().reveal('.experience__data, .projects__container', {origin: 'right'});
-ScrollReveal().reveal('.projects__card, .skills_card', {interval: 100});
+ScrollReveal().reveal('.projects__card, .section__title, .skills_card', {interval: 100});
 
 const openModalButtons = document.querySelectorAll('[data-modal-target]')
 const closeModalButtons = document.querySelectorAll('[data-close-button]')
