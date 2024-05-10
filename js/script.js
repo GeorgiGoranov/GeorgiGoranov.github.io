@@ -1,4 +1,4 @@
-
+//header on phone
 const toggleBtn = document.querySelector('.nav__toggle')
 const toggleBtnIcon = document.querySelector('.nav__toggle i')
 const dropdownMenu = document.querySelector('.nav__menu_phone')
@@ -38,6 +38,8 @@ ScrollReveal().reveal('.education__data, .skills__container', {origin: 'left'});
 ScrollReveal().reveal('.experience__data, .projects__container', {origin: 'right'});
 ScrollReveal().reveal('.projects__card, .section__title, .skills_card', {interval: 100});
 
+
+//popup balack out and click to close and block scroll on the main page when popup is active
 const openModalButtons = document.querySelectorAll('[data-modal-target]')
 const closeModalButtons = document.querySelectorAll('[data-close-button]')
 const overlay = document.getElementById('overlay')
@@ -60,11 +62,13 @@ function openModal(modal){
     if(modal == null)return
     modal.classList.add('active')
     overlay.classList.add('active')
+    document.body.classList.add('no-scroll');  // Add this line
 }
 function closeModal(modal){
     if(modal == null)return
     modal.classList.remove('active')
     overlay.classList.remove('active')
+    document.body.classList.remove('no-scroll');  // Add this line
 }
 
 overlay.addEventListener('click', () => {
@@ -74,7 +78,7 @@ overlay.addEventListener('click', () => {
     })
 })
 
-
+// slide image funtion
 const scrollContainer = document.querySelector(".gallery");
 const backBtn = document.getElementById("backBtn")
 const nextBtn = document.getElementById("nextBtn")
@@ -94,3 +98,4 @@ backBtn.addEventListener("click", ()=>{
     scrollContainer.style.scrollBehavior ="smooth";
     scrollContainer.scrollLeft -=450;
 })
+

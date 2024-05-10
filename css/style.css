@@ -27,6 +27,9 @@
 
 html {
   scroll-behavior: smooth;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h2 {
@@ -42,6 +45,13 @@ h1 {
 body {
   height: 100vh;
   background-color: var(--body-color);
+  max-width: 1490px;
+}
+
+.outer_container{
+  display: grid;
+  align-items: center;
+  justify-content: center;
 }
 
 header {
@@ -66,7 +76,7 @@ img {
 .nav {
   width: 100%;
   height: 60px;
-  max-width: 95%;
+  max-width: 1490px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -339,7 +349,7 @@ p {
   
   background-image: url('../pic/161816083_213280603920224_6452851280462859824_n.jpg');
   background-size: cover;
-  background-position: 0 -50px;
+  background-position:center;
   position: relative;
   
 }
@@ -843,14 +853,16 @@ button{
 }
 
 .modal-body{
-  padding: 10px 15px;
+  padding-top: 10px;
   background-color: var(--first-color);
   border-radius: 0  0 10px 10px;
 }
 
 .p__header_modal {
-  color: var(--title-color)
+  color: var(--title-color);
+  
 }
+
 
 #av-1{
   font-size: x-large;
@@ -861,6 +873,10 @@ button{
 #dev-1{
   font-size: x-large;
   color: white
+}
+
+#date-1{
+  font-size: x-large;
 }
 
 #av-2{
@@ -874,10 +890,30 @@ button{
   color: red
 }
 
+#date-2{
+  font-size: x-large;
+}
+
 
 .p__modal{
   text-align: center;
-  color: black
+  color: black;
+  padding: 10px;
+}
+
+.p__h1{
+  text-align: center;
+  padding: 10px;
+}
+
+.list_tech{
+  padding: 10px;
+  text-align: center;
+}
+
+.list_tech span{
+  color: black;
+
 }
 
 #overlay{
@@ -975,3 +1011,9 @@ button{
   cursor: pointer;
   transform: scale(1.1);
 }
+
+.no-scroll {
+  overflow: hidden;
+  height: 100%;
+}
+
