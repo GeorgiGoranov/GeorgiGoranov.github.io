@@ -487,11 +487,13 @@ p {
   position: relative;
   border-radius: 1rem;
   overflow: hidden;
+  
 }
 
 .projects__img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 .projects__modal {
@@ -835,7 +837,7 @@ font-weight: bold;
   align-items: center;
   padding-bottom: 1.25rem;
   text-align: center;
-
+  
 }
 
 .button__group i{
@@ -864,33 +866,28 @@ button{
 }
 
 
-#av-1{
-  font-size: x-large;
-  color: white
-  
-}
-
-#dev-1{
+#av-1,#dev-1 ,#date-1{
   font-size: x-large;
   color: white
 }
 
-#date-1{
-  font-size: x-large;
-}
 
-#av-2{
+#av-2,#dev-2{
   font-size: x-large;
   color: red
   
-}
-
-#dev-2{
-  font-size: x-large;
-  color: red
 }
 
 #date-2{
+  font-size: x-large;
+}
+
+#av{
+  font-size: x-large;
+  color: red
+}
+
+#dev,#date{
   font-size: x-large;
 }
 
